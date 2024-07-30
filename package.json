@@ -17,7 +17,8 @@
         "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1",
         "vue": "^2.6.11",
         "vue-apexcharts": "^1.6.2",
-        "vue-chartjs": "^5.0.1"
+        "vue-chartjs": "^5.0.1",
+        "xml2js": "^0.4.23"
     },
     "devDependencies": {
         "@vue/cli-plugin-babel": "^4.5.0",

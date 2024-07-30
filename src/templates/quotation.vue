@@ -29,25 +29,25 @@
                 <tr class="">
                   <td class="border border-blue-200 px-3 py-1">單據編號</td>
                   <td class="border border-blue-200 px-3 text-right py-1">
-                    QU45954
+                    {{data.orderNumber}}
                   </td>
                 </tr>
                 <tr>
                   <td class="border border-blue-200 px-3 py-1">報價日期</td>
                   <td class="border border-blue-200 px-3 text-right pl-12 py-1">
-                    2020/03/09
+                    {{data.orderDate}}
                   </td>
                 </tr>
                 <tr>
                   <td class="border border-blue-200 px-3 py-1">發票類型</td>
                   <td class="border border-blue-200 px-3 text-right py-1">
-                    專票/普票
+                    {{data.orderType}}
                   </td>
                 </tr>
                 <tr>
                   <td class="border border-blue-200 px-3 py-1">幣别</td>
                   <td class="border border-blue-200 px-3 py-1 text-right">
-                    NTD
+                    {{data.currency}}
                   </td>
                 </tr>
               </table>
@@ -60,7 +60,7 @@
                 <tr>
                   <td class="pt-2">公司名稱：</td>
                   <td class="pt-2">
-                    富星連合健康保險股份有限公司江門中心支公司
+                    {{data.companyName}}
                   </td>
                 </tr>
                 <tr>
@@ -326,7 +326,9 @@
 <script>
 import LayoutFull from "../components/layout-full/src/index.vue";
 export default {
-  props: {},
+  props: {
+    data:Object
+  },
   components: {
     LayoutFull
   },

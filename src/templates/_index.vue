@@ -1,7 +1,7 @@
 <template>
   <div>
     <layout-full>
-      <template class="font-bold" v-slot:content><Quotation /></template
+      <template class="font-bold" v-slot:content><Quotation :data="data" /></template
     ></layout-full>
   </div>
 </template>
@@ -15,7 +15,13 @@ export default {
   data() {
     return {};
   },
-  created() {},
-  methods: {}
+  created() {
+    this.getData()
+  },
+  methods: {
+    getData(){
+      this.data = this.$root
+    }
+  }
 };
 </script>
