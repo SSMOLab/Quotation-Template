@@ -1,10 +1,10 @@
 {
-  "belstarTemplateName": "quotation-template", 
-  "tenantTemplateName": "quotation-template",
-  "belstarTemplateVersion": "0.1.0",
-  "tenantTemplateVersion": "0.1.0",
+  "belstarTemplateName": "product-quotation-form", 
+  "tenantTemplateName": "product-quotation-form",
+  "belstarTemplateVersion": "0.2.0",
+  "tenantTemplateVersion": "0.2.0",
   "author": "", 
-  "description": "demo",
+  "description": "tuexp_004",
   "templateType": "信函",
-  "templateCode": "demo"
+  "templateCode": "tuexp_004"
 }

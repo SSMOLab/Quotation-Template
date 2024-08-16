@@ -98,9 +98,9 @@ try {
   "belstarTemplateVersion": "${packageFile["version"]}",
   "tenantTemplateVersion": "${packageFile["version"]}",
   "author": "", 
-  "description": "demo",
+  "description": "tuexp_004",
   "templateType": "信函",
-  "templateCode": "demo"
+  "templateCode": "tuexp_004"
 }`;
     fs.writeFile(`${dataPath}metadata.json`, metadataString, function(e) {
       if (e) {
