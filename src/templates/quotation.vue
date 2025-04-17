@@ -1,53 +1,47 @@
 <template>
   <div>
     <layout-full>
-      <template v-slot:content
-        ><div>
+      <template v-slot:content>
+        <div>
           <div class="pt-8 overflow-hidden">
             <div class="float-left">
-              <img class="w-40" src="../assets/img/SSMOLab-RGB.png" alt="" />
+              <img class="w-40" src="../assets/img/turingtext-logo-black.png" alt="" />
             </div>
-            <div
-              class="float-right text-sm tracking-widest font-normal pt-4 pr-0"
-            >
-              同源數位智能股份有限公司
+            <div class="float-right text-sm tracking-widest font-normal pt-4 pr-0">
+              圖靈文本股份有限公司
             </div>
           </div>
           <div class="blank hidden h-12"></div>
           <div class="overflow-hidden">
-            <h1
-              class="pt-4 text-4xl font-normal text-center tracking-widest text-blue-600"
-            >
+            <h1 class="pt-4 text-4xl font-normal text-center tracking-widest text-blue-600">
               報&nbsp;價&nbsp;單
             </h1>
           </div>
           <div>
-            <div
-              class="float-right text-sm pt-6 text-gray-800 font-normal overflow-hidden"
-            >
+            <div class="float-right text-sm pt-6 text-gray-800 font-normal overflow-hidden">
               <table class="">
                 <tr class="">
                   <td class="border border-blue-200 px-3 py-1">單據編號</td>
                   <td class="border border-blue-200 px-3 text-right py-1">
-                    {{data.orderNumber}}
+                    {{ data.orderNumber }}
                   </td>
                 </tr>
                 <tr>
                   <td class="border border-blue-200 px-3 py-1">報價日期</td>
                   <td class="border border-blue-200 px-3 text-right pl-12 py-1">
-                    {{data.orderDate}}
+                    {{ data.orderDate }}
                   </td>
                 </tr>
                 <tr>
                   <td class="border border-blue-200 px-3 py-1">發票類型</td>
                   <td class="border border-blue-200 px-3 text-right py-1">
-                    {{data.orderType}}
+                    {{ data.orderType }}
                   </td>
                 </tr>
                 <tr>
                   <td class="border border-blue-200 px-3 py-1">幣别</td>
                   <td class="border border-blue-200 px-3 py-1 text-right">
-                    {{data.currency}}
+                    {{ data.currency }}
                   </td>
                 </tr>
               </table>
@@ -60,7 +54,7 @@
                 <tr>
                   <td class="pt-2">公司名稱：</td>
                   <td class="pt-2">
-                    {{data.companyName}}
+                    {{ data.companyName }}
                   </td>
                 </tr>
                 <tr>
@@ -85,48 +79,32 @@
           <div class="pt-8 overflow-hidden relative">
             <table class="text-sm text-gray-900 w-full">
               <tr>
-                <td
-                  class="px-3 py-2 border-gray-100 text-center border-r bg-gray-200"
-                >
+                <td class="px-3 py-2 border-gray-100 text-center border-r bg-gray-200">
                   序號
                 </td>
-                <td
-                  class="px-6 py-2 border-gray-100 text-center border-r bg-gray-200"
-                >
+                <td class="px-6 py-2 border-gray-100 text-center border-r bg-gray-200">
                   產品編號
                 </td>
-                <td
-                  class="px-6 py-2 border-gray-100 text-center border-r bg-gray-200"
-                >
+                <td class="px-6 py-2 border-gray-100 text-center border-r bg-gray-200">
                   規格描述
                 </td>
-                <td
-                  class="px-2 py-2 border-gray-100 text-center border-r bg-gray-200"
-                >
+                <td class="px-2 py-2 border-gray-100 text-center border-r bg-gray-200">
                   單價
                 </td>
-                <td
-                  class="px-2 py-2 border-gray-100 text-center border-r bg-gray-200"
-                >
+                <td class="px-2 py-2 border-gray-100 text-center border-r bg-gray-200">
                   數量
                 </td>
-                <td
-                  class="px-2 py-2 border-gray-100 text-center border-r bg-gray-200"
-                >
+                <td class="px-2 py-2 border-gray-100 text-center border-r bg-gray-200">
                   折扣(%)
                 </td>
-                <td
-                  class="px-6 py-2 border-gray-100 text-center border-r bg-blue-300"
-                >
+                <td class="px-6 py-2 border-gray-100 text-center border-r bg-blue-300">
                   稅率
                 </td>
                 <td class="px-6 py-2 bg-blue-500 text-center text-green-100">
                   小計
                 </td>
               </tr>
-              <tr
-                class="px-3 text-left border-gray-300 border-b text-black text-opacity-75"
-              >
+              <tr class="px-3 text-left border-gray-300 border-b text-black text-opacity-75">
                 <td class="py-2">0001</td>
                 <td class="">62878634</td>
                 <td>封面</td>
@@ -136,9 +114,7 @@
                 <td>1%</td>
                 <td>5836</td>
               </tr>
-              <tr
-                class="px-3 text-left border-gray-300 border-b text-black text-opacity-75"
-              >
+              <tr class="px-3 text-left border-gray-300 border-b text-black text-opacity-75">
                 <td class="py-2">0002</td>
                 <td class="">62878466</td>
                 <td>封底</td>
@@ -148,9 +124,7 @@
                 <td>1%</td>
                 <td>3748</td>
               </tr>
-              <tr
-                class="px-3 text-left border-gray-300 border-b text-black text-opacity-75"
-              >
+              <tr class="px-3 text-left border-gray-300 border-b text-black text-opacity-75">
                 <td class="py-2">0003</td>
                 <td class="">62878568</td>
                 <td>內頁1</td>
@@ -160,9 +134,7 @@
                 <td>1%</td>
                 <td>648</td>
               </tr>
-              <tr
-                class="px-3 text-left border-gray-300 border-b text-black text-opacity-75"
-              >
+              <tr class="px-3 text-left border-gray-300 border-b text-black text-opacity-75">
                 <td class="py-2">0004</td>
                 <td class="">62878532</td>
                 <td>內頁2</td>
@@ -172,9 +144,7 @@
                 <td>1%</td>
                 <td>1537</td>
               </tr>
-              <tr
-                class="px-3 text-left border-gray-300 border-b text-black text-opacity-75"
-              >
+              <tr class="px-3 text-left border-gray-300 border-b text-black text-opacity-75">
                 <td class="py-2">0005</td>
                 <td class="">62878578</td>
                 <td>內頁3</td>
@@ -184,9 +154,7 @@
                 <td>1%</td>
                 <td>5473</td>
               </tr>
-              <tr
-                class="px-3 text-left border-gray-300 border-b text-black text-opacity-75"
-              >
+              <tr class="px-3 text-left border-gray-300 border-b text-black text-opacity-75">
                 <td class="py-2">0006</td>
                 <td class="">62878734</td>
                 <td>內頁4</td>
@@ -196,9 +164,7 @@
                 <td>1%</td>
                 <td>6484</td>
               </tr>
-              <tr
-                class="px-3 text-left border-gray-300 border-b text-black text-opacity-75"
-              >
+              <tr class="px-3 text-left border-gray-300 border-b text-black text-opacity-75">
                 <td class="py-2">0007</td>
                 <td class="">62878387</td>
                 <td>內頁5</td>
@@ -285,8 +251,7 @@
             </div>
             <div>
               <table
-                class="text-gray-700 bg-blue-100 font-normal text-sm w-6/12 float-right rounded-lg overflow-hidden"
-              >
+                class="text-gray-700 bg-blue-100 font-normal text-sm w-6/12 float-right rounded-lg overflow-hidden">
                 <tr>
                   <td class="pl-6 pt-8 pr-2">聯&nbsp;絡&nbsp;人：</td>
                   <td class="pt-8">張三</td>
@@ -301,7 +266,7 @@
                 </tr>
                 <tr class="">
                   <td class="pl-6 pt-1">公司名稱：</td>
-                  <td class="pt-1">同源數位智能股份有限公司</td>
+                  <td class="pt-1">圖靈文本股份有限公司</td>
                 </tr>
                 <tr class="">
                   <td class="pl-6 pt-1">公司稅號：</td>
@@ -316,10 +281,9 @@
               </table>
             </div>
           </div>
-          <div
-            class="border-gray-500 border-b border-1 pt-6"
-          ></div></div></template
-    ></layout-full>
+          <div class="border-gray-500 border-b border-1 pt-6"></div>
+        </div>
+      </template></layout-full>
   </div>
 </template>
 
@@ -327,7 +291,7 @@
 import LayoutFull from "../components/layout-full/src/index.vue";
 export default {
   props: {
-    data:Object
+    data: Object
   },
   components: {
     LayoutFull
